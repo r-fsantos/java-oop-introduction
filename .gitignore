@@ -1,5 +1,10 @@
 # Compiled class file
 *.class
+*.com
+*.dll
+*.exe
+*.o
+*.so
 
 # Log file
 *.log
@@ -10,14 +15,42 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files 
 *.jar
 *.war
 *.nar
 *.ear
 *.zip
 *.tar.gz
+*.tar
+*.gz
 *.rar
+*.iso
+*.7z
+*.dmg
+
+# Logs and databases
+*.log
+*.cvs
+*.sqlite
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Java generated stuff
+*.iml
+.springBeans
+.classpath
+.project
+.groovy/
+.settings/
+.idea/
+logs/
+target/
+/bin/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
