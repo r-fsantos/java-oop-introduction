@@ -9,5 +9,10 @@ public class Conta {
     int agencia;
     int conta;
     double saldo;
+
+    // metodos
+    public void deposita(double valor){ // public nivel de acesso permitido
+        this.saldo+=valor;
+    }
         
 }
