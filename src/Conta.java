@@ -11,8 +11,9 @@ public class Conta {
     double saldo;
 
     // metodos
-    public void deposita(double valor){ // public nivel de acesso permitido
+    public void deposita(double valor){ // public nivel de acesso permitidobom
         this.saldo+=valor;
     }
-        
+
 }
+
