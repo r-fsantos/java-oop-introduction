@@ -11,8 +11,28 @@ public class Conta {
     double saldo;
 
     // metodos
-    public void deposita(double valor){ // public nivel de acesso permitidobom
+    public void deposita(double valor) { // public nivel de acesso permitidobom
         this.saldo+=valor;
+    }
+
+    public boolean saca(double valor) {
+        if(this.saldo >= valor) {
+            this.saldo -= valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean transfere(double valor, Conta destino) {
+        if(this.saldo >= valor) {
+            this.saldo -= valor;
+            /* como atualizar o saldo da conta destino? */
+            destino.deposita(valor);
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
