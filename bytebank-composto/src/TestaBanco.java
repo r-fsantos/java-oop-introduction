@@ -15,5 +15,6 @@ public class TestaBanco {
 		// composicao de objetos
 		contaDoRenato.titular = renato;
 		System.out.println(contaDoRenato.titular.nome);
+		System.out.println(renato);
     }
 }
