@@ -7,10 +7,22 @@ public class Conta {
     //              implementacao do meu modelo Conta
     String titular;
     int agencia;
+    int numeero
     int conta;
     double saldo;
 
     // metodos
+
+    //public int getNumero() {...}
+
+    public void setNumero(int numero) {
+        if (numero <= 0) {
+            System.out.println("Não são permitidos valores menores que zero.");
+            return;
+        }
+        this.agencia = numero
+    }
+
     public void deposita(double valor) { // public nivel de acesso permitidobom
         this.saldo+=valor;
     }
