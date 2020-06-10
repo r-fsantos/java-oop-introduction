@@ -8,7 +8,7 @@ public class Conta {
     int agencia;
     int conta;
     int numero; // para que mesmo?
-    double saldo;
+    private double saldo;
     Cliente titular;
 
     public void deposita(double valor) { // public nivel de acesso permitidobom
@@ -33,6 +33,10 @@ public class Conta {
         } else {
             return false;
         }
+    }
+
+    public double getSaldo() {
+        return this.saldo;
     }
 
 }
