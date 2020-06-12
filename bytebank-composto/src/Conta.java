@@ -12,7 +12,7 @@ public class Conta {
     Cliente titular;
 
 
-    public void deposita(double valor) { // public nivel de acesso permitidobom
+    public void deposita(double valor) {
         this.saldo+=valor;
     }
 
@@ -36,6 +36,7 @@ public class Conta {
         }
     }
 
+    // getter - type of method that only acess information
     public double getSaldo() { return this.saldo; }
 
 }
