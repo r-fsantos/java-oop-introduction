@@ -3,24 +3,20 @@ public class TestaSacaNegativo {
         Conta conta = new Conta();
         Cliente cliente = new Cliente();
 
-        cliente.nome = "Renato Felício";
-        conta.titular = cliente;
-
-        // testa associacao entre objetos -> 1 cliente <-> 1 conta
-        System.out.println(conta.titular.nome + "\n");
-
-        System.out.println("Saldo da conta é R$ " + conta.getSaldo() + " Reais");
         conta.deposita(100);
-        System.out.println("Saldo da conta é R$ " + conta.getSaldo() + " Reais");
+//        System.out.println("saldo da conta R$ " + conta.saldo + " Reais.");
+        System.out.println("saldo da conta R$ " + conta.getSaldo() + " Reais.");
 
-        System.out.println("");
+        // utilizar retorno do metodo (boolean)
+//        conta.saca(200); // valor > saldo
+        System.out.println(conta.saca(200)); /* retorna falso */
+//        System.out.println("saldo da conta R$ " + conta.saldo + " Reais.");
+        System.out.println("saldo da conta R$ " + conta.getSaldo() + " Reais.");
 
-        if(!conta.saca(100)) {
-            System.out.println("Saque não permitido. Saldo incompatível ao valor." +
-                               "\nSeu saldo atualizado: R$ " + conta.getSaldo() + " Reais.");
-        } else {
-            System.out.println("Saque realizado com sucesso." +
-                               "\nSeu saldo atualizado: R$ " + conta.getSaldo() + " Reais.");
-        }
+        // truque -> acessar saldo diretamente
+        // acessar tributo diretamente! imagina a confusao...
+        // design pattern
+        //conta.saldo -= 200;
+        System.out.println("saldo da conta R$ " + conta.getSaldo() + " Reais.");
     }
 }
