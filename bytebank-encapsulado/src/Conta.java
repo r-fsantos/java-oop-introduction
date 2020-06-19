@@ -10,12 +10,12 @@ public class Conta {
     private double saldo;
     private Cliente titular;
 
-    // "setters" methods for saldo.
-    public void deposita(double valor) {
+    // methods for saldo.
+    public void depositar(double valor) {
         this.saldo+=valor;
     }
 
-    public boolean saca(double valor) {
+    public boolean sacar(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
             return true;
@@ -24,18 +24,17 @@ public class Conta {
         }
     }
 
-    public boolean transfere(double valor, Conta origem, Conta destino) {
+    public boolean transferir(double valor, Conta origem, Conta destino) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
             /* como atualizar o saldo da conta destino? */
-            destino.deposita(valor);
+            destino.depositar(valor);
             return true;
         } else {
             return false;
         }
     }
 
-    // getters - type of method that only acess information
     public double getSaldo() {
         return this.saldo;
     }
@@ -44,13 +43,20 @@ public class Conta {
         return this.numero;
     }
 
-    // seterrs - type of method that changes variables contents
     public void setNumero(int numero) { // faltando a conta referente a esse numero? e pra multiplas contas?
         this.numero = numero;
     }
 
     public int getAgencia() {
         return this.agencia;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Cliente getTitular() {
+        return titular;
     }
 
 }
