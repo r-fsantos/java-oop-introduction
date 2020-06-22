@@ -1,27 +1,19 @@
-import java.util.zip.CheckedOutputStream;
-
 public class Conta {
-    // especificacao/ATRIBUTOS do TIPO Conta
-    // toda classe do TIPO Conta tem os ATRIBUTOS/propriedades/campos abaixo.
-    // construir/INSTANCIAR contas com essa especificacao
-    // intanciar -> criar objeto, instância de uma classe de tal TIPO
-    //              manipulavel, como se existisse fisicamente
-    //              implementacao do meu modelo Conta
     private int agencia;
     private int numero; // numero da conta
     private double saldo;
-    private static int total;
-//    private int total;
-    private Cliente titular;
+    private static int total = 0;
+    private Cliente titular; // composicao de Cliente e Conta.
+    // AO CRIAR CONTA, JA SE CRIA CLIENTE?
 
     // constructor method --> initialization routine
     public Conta(int agencia, int numero) {
-       Conta.total ++; // atributo de classe
-//        total ++;
-//        System.out.println("o total de contas é " + total);
-        this.agencia = agencia;
-        this.numero = numero;
-//        System.out.println("Estou criando uma conta " + this.numero);
+       Conta.total ++;
+       System.out.println("Estou criando uma conta.");
+       System.out.println("O total de contas é " + Conta.total);
+       this.agencia = agencia;
+       this.numero = numero;
+       this.saldo = 100; // saldo inicial de 100 reais
     }
 
     public static int getTotal() {
@@ -36,6 +28,7 @@ public class Conta {
         em caso de agencia ser um atributo imutavel, nao ha necessidade desse metodo
         a agencia sera passada como valor a nova conta via metodo construtor
     */
+    /*
     public void setAgencia(int agencia) {
         if (agencia <= 0.0) {
             System.out.println("Error message: Negative value. Try again.");
@@ -43,15 +36,17 @@ public class Conta {
         }
         this.agencia = agencia;
     }
+*/
 
     public int getNumero(){
         return this.numero;
     }
 
     /*
-        em caso de agencia ser um atributo imutavel, nao ha necessidade desse metodo
-        a agencia sera passada como valor a nova conta via metodo construtor
+        em caso de numero ser um atributo imutavel, nao ha necessidade desse metodo
+        pois numero sera passado como valor a nova conta via metodo construtor
     */
+    /*
     public void setNumero(int numero) {
         if (numero <= 0.0) {
             System.out.println("Error message: Negative value. Try again.");
@@ -59,6 +54,7 @@ public class Conta {
         }
         this.numero = numero;
     }
+*/
 
     // methods for saldo.
     public void depositar(double valor) {
