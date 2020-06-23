@@ -3,21 +3,21 @@ public class Gerente extends Funcionarios {
     private int senha;
 
     public boolean autentica(int senha) {
-        if(this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.senha == senha;
     }
 
     public void setSenha(int senha) {
         this.senha = senha;
     }
-    /*
 
     public double getBonificacao() {
-        return this.salario;
+//        return this.salario;
+//        trocar this por super -> atributo referente a superclasse Funcionario
+//        return super.salario;
+//        return this.salario * 0.1;
+//        return (super.salario * 0.1) + super.salario;
+//        return super.salario * 1.1;
+//        mantendo a assinatura
+        return super.getBonificacao() + super.getSalario();
     }
-
-     */
 }
