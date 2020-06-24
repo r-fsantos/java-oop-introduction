@@ -1,5 +1,5 @@
 // gerente originida a partir da heranca de Funcionarios
-public class Gerente extends Funcionarios {
+public class Gerente extends Funcionario {
     private int senha;
 
     public boolean autentica(int senha) {
@@ -18,6 +18,7 @@ public class Gerente extends Funcionarios {
 //        return (super.salario * 0.1) + super.salario;
 //        return super.salario * 1.1;
 //        mantendo a assinatura
+        System.out.println("Obtendo bonificação padrão para Gerente");
         return super.getBonificacao() + super.getSalario();
     }
 }

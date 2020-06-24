@@ -1,19 +1,20 @@
-public class Funcionarios {
+public class Funcionario {
     public String nome;
     public String cpf;
-//    protected double salario; // alteracao devido a classe filha referir-se
-//    a metodo da classe mae atraves de super.getBonificacao() e super.getSalario()
-//    assim nao eh necessario o protected... private resolve! pois valores de
-//    atributos sao requisitados via getBonificacao() e getSalario()
+/*
+    protected double salario; // alteracao devido a classe filha referir-se
+    a metodo da classe mae atraves de super.getBonificacao() e super.getSalario()
+    assim nao eh necessario o protected... private resolve! pois valores de
+    atributos sao requisitados via getBonificacao() e getSalario()
+ */
     private double salario;
 
-    public Funcionarios() {
+    public Funcionario() {
 //        Funcionarios.totalDeFuncionarios ++; // so eh possivel alterar diretamente da classe
-
-
     }
 
-    public double getBonificacao(){ // bonificacao de 5% a partir do salario do cargo/tipo
+    public double getBonificacao() {
+        System.out.println("Obtendo bonificação para Funcionário padrão");
         return this.salario * 0.05;
     }
 
