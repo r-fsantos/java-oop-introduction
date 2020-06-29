@@ -69,9 +69,7 @@ public class Conta {
     }
 
     public boolean transferir(double valor, Conta origem, Conta destino) {
-        if(this.saldo >= valor) {
-            this.saldo -= valor;
-            /* como atualizar o saldo da conta destino? */
+        if(this.sacar(valor)) {
             destino.depositar(valor);
             return true;
         } else {
