@@ -63,7 +63,7 @@ public class TestaReferencias {
         controle.registrarTotalDeBonificacoes(g1);
         controle.registrarTotalDeBonificacoes(f1);
         controle.registrarTotalDeBonificacoes(ev1);
-        controle.registrarTotalDeBonificacoes(d1);
+        controle.registrarTotalDeBonificacoes(dl1);
         System.out.println(controle.getSoma());
 
 
