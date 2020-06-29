@@ -55,25 +55,29 @@ public class Conta {
 */
 
     // methods for saldo.
-    public void depositar(double valor) {
+//    public void depositar(double valor) {
+//        this.saldo+=valor;
+//    }
+    public boolean depositar(double valor) {
         this.saldo+=valor;
+        return true;
+    }
+    public boolean transferir(double valor, Conta destino) {
+//        if(this.sacar(valor)) {
+//            destino.depositar(valor);
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return this.sacar(valor) ? destino.depositar(valor) : false;
     }
 
     public boolean sacar(double valor) {
-        if(this.saldo >= valor) {
+        if(this.saldo < valor) {
+            return false;
+        } else {
             this.saldo -= valor;
             return true;
-        } else {
-            return false;
-        }
-    }
-
-    public boolean transferir(double valor, Conta origem, Conta destino) {
-        if(this.sacar(valor)) {
-            destino.depositar(valor);
-            return true;
-        } else {
-            return false;
         }
     }
 
