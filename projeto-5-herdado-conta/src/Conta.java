@@ -62,13 +62,8 @@ public class Conta {
         this.saldo+=valor;
         return true;
     }
+
     public boolean transferir(double valor, Conta destino) {
-//        if(this.sacar(valor)) {
-//            destino.depositar(valor);
-//            return true;
-//        } else {
-//            return false;
-//        }
         return this.sacar(valor) ? destino.depositar(valor) : false;
     }
 
@@ -92,6 +87,5 @@ public class Conta {
     public Cliente getTitular() {
         return titular;
     }
-
 }
 
