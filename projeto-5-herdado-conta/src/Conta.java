@@ -22,44 +22,12 @@ public class Conta {
         return this.agencia;
     }
 
-    /*
-        em caso de agencia ser um atributo imutavel, nao ha necessidade desse metodo
-        a agencia sera passada como valor a nova conta via metodo construtor
-    */
-    /*
-    public void setAgencia(int agencia) {
-        if (agencia <= 0.0) {
-            System.out.println("Error message: Negative value. Try again.");
-            return;
-        }
-        this.agencia = agencia;
-    }
-*/
-
     public int getNumero(){
         return this.numero;
     }
 
-    /*
-        em caso de numero ser um atributo imutavel, nao ha necessidade desse metodo
-        pois numero sera passado como valor a nova conta via metodo construtor
-    */
-    /*
-    public void setNumero(int numero) {
-        if (numero <= 0.0) {
-            System.out.println("Error message: Negative value. Try again.");
-            return;
-        }
-        this.numero = numero;
-    }
-*/
-
-    // methods for saldo.
-//    public void depositar(double valor) {
-//        this.saldo+=valor;
-//    }
     public boolean depositar(double valor) {
-        this.saldo+=valor;
+        this.saldo += valor;
         return true;
     }
 
