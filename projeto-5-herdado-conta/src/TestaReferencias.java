@@ -45,9 +45,11 @@ public class TestaReferencias {
         g1.setSalario(5000.00);
         System.out.println(g1.getNome());
 
-        Funcionario f1 = new Funcionario();
-        f1.setNome("João Vitor");
-        f1.setSalario(2000.00);
+        // not allowed, beacuse Funcionario is out prototype/SuperClass
+        // therefore, cannot be instantiated
+//        Funcionario f1 = new Funcionario();
+//        f1.setNome("João Vitor");
+//        f1.setSalario(2000.00);
 //        System.out.println(f1.getBonificacao());
 
         EditorDeVideo ev1 = new EditorDeVideo();
@@ -63,7 +65,7 @@ public class TestaReferencias {
         controle.registrarTotalDeBonificacoes(g1);
         controle.registrarTotalDeBonificacoes(f1);
         controle.registrarTotalDeBonificacoes(ev1);
-        controle.registrarTotalDeBonificacoes(dl1);
+        controle.registrarTotalDeBonificacoes(d1);
         System.out.println(controle.getSoma());
 
 
