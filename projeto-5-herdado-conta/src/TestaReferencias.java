@@ -45,13 +45,6 @@ public class TestaReferencias {
         g1.setSalario(5000.00);
         System.out.println(g1.getNome());
 
-        // not allowed, beacuse Funcionario is out prototype/SuperClass
-        // therefore, cannot be instantiated
-//        Funcionario f1 = new Funcionario();
-//        f1.setNome("João Vitor");
-//        f1.setSalario(2000.00);
-//        System.out.println(f1.getBonificacao());
-
         EditorDeVideo ev1 = new EditorDeVideo();
         ev1.setNome("Tarilia Gomes");
         ev1.setSalario(2500.00);
