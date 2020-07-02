@@ -26,10 +26,7 @@ public abstract class Conta {
         return this.numero;
     }
 
-    public boolean depositar(double valor) {
-        this.saldo += valor;
-        return true;
-    }
+    public abstract boolean depositar(double valor);
 
     public boolean transferir(double valor, Conta destino) {
         return this.sacar(valor) ? destino.depositar(valor) : false;
