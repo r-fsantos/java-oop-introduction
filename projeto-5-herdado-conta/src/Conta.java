@@ -1,7 +1,7 @@
 public abstract class Conta {
     private int agencia;
     private int numero; // numero da conta
-    private double saldo;
+    protected double saldo;
     private static int total = 0;
     private Cliente titular; // composicao de Cliente e Conta
 
