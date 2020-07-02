@@ -13,10 +13,8 @@ public abstract class Funcionario {
 //        Funcionarios.totalDeFuncionarios ++; // so eh possivel alterar diretamente da classe
     }
 
-    public double getBonificacao() {
-        System.out.println("Obtendo bonificação para Funcionário padrão");
-        return this.salario * 0.05;
-    }
+    // abstract method, because every subclass has your very own procedure to calculate bonification
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
