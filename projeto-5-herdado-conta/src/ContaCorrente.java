@@ -9,5 +9,11 @@ public class ContaCorrente extends Conta {
         double valorAtualizado = valor + 0.2;
         return super.sacar(valorAtualizado); // taxa de saque da ContaCorrente
     }
+
+    @Override
+    public boolean depositar(double valor) {
+        this.saldo += valor;
+        return true;
+    }
 }
 
