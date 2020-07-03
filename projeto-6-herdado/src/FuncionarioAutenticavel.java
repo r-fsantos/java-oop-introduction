@@ -1,4 +1,4 @@
-public class FuncionarioAutenticavel extends Funcionario{
+public abstract class FuncionarioAutenticavel extends Funcionario{
     private int senha;
 
     public void setSenha(int senha) {
