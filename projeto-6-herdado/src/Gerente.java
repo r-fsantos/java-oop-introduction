@@ -1,5 +1,5 @@
 // gerente originida a partir da heranca de Funcionarios
-public class Gerente extends Funcionario {
+public class Gerente extends FuncionarioAutenticavel {
     public double getBonificacao() {
 //        return this.salario;
 //        trocar this por super -> atributo referente a superclasse Funcionario
