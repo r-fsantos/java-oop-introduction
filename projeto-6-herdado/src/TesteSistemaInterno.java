@@ -6,8 +6,8 @@ public class TesteSistemaInterno {
         Administrador adm = new Administrador();
         adm.setSenha(3333);
 
-        SistemaInterno siTeste = new SistemaInterno();
-        siTeste.autenticar(g);
-        siTeste.autenticar(adm);
+//        SistemaInterno siTeste = new SistemaInterno();
+//        siTeste.autenticar(g);
+//        siTeste.autenticar(adm);
     }
 }
