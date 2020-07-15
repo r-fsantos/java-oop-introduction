@@ -1,3 +1,7 @@
+//contrato Autenticavel
+    //quem assinar esse contrato precisa implementar
+    //metodo setSenha
+    //metodo autentica
 public abstract interface Autenticavel {
 
 //    private int senha; interface eh um molde, naum possui atributos, pois n eh concreto
