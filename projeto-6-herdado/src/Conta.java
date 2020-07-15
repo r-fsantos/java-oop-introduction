@@ -3,7 +3,7 @@ public abstract class Conta {
     private int numero; // numero da conta
     protected double saldo;
     private static int total = 0;
-    private Cliente titular; // composicao de Cliente e Conta
+    private Autenticavel titular; // composicao de Cliente e Conta
 
     public Conta(int agencia, int numero) { // constructor method --> initialization routine
        Conta.total ++;
@@ -45,11 +45,11 @@ public abstract class Conta {
         return this.saldo;
     }
 
-    public void setTitular(Cliente titular) {
+    public void setTitular(Autenticavel titular) {
         this.titular = titular;
     }
 
-    public Cliente getTitular() {
+    public Autenticavel getTitular() {
         return titular;
     }
 }
