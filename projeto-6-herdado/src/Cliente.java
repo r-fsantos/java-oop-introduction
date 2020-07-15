@@ -1,4 +1,4 @@
-public class Cliente {
+public class Cliente implements Autenticavel{
 
 
 //    private String nome;
