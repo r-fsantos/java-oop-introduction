@@ -1,5 +1,6 @@
 public abstract class Autenticavel {
-    private int senha;
+
+//    private int senha; interface eh um molde, naum possui atributos, pois n eh concreto
 
     public abstract void setSenha(int senha);// { this.senha = senha; }
 
