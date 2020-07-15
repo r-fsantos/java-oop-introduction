@@ -1,4 +1,4 @@
-public abstract class Autenticavel {
+public abstract interface Autenticavel {
 
 //    private int senha; interface eh um molde, naum possui atributos, pois n eh concreto
 
