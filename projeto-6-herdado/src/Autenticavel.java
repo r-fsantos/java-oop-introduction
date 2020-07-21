@@ -2,12 +2,9 @@
     //quem assinar esse contrato precisa implementar
     //metodo setSenha
     //metodo autentica
-public abstract interface Autenticavel {
+public interface Autenticavel {
 
-//    private int senha; interface eh um molde, naum possui atributos, pois n eh concreto
-
-    public abstract void setSenha(int senha);// { this.senha = senha; }
-
-    public abstract boolean autenticar(int senha); //{ return this.senha == senha; }
+    void setSenha(int senha);// { this.senha = senha; }
+    boolean autenticar(int senha); //{ return this.senha == senha; }
 
 }
