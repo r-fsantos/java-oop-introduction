@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public interface Tributavel {
+
+    public abstract double getValorImposto();
 }
