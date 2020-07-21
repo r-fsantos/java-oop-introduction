@@ -1,4 +1,4 @@
-public class CalculadorImposto implements Tributavel{
+public class CalculadorImposto {
 
     private double valorDosImpostos;
 
@@ -9,4 +9,5 @@ public class CalculadorImposto implements Tributavel{
     public double getValorDosImpostos() {
         return valorDosImpostos;
     }
+
 }
